@@ -153,7 +153,7 @@ return [
             'ukuran_helper'        => ' ',
             'bahan'                => 'Bahan',
             'bahan_helper'         => ' ',
-            'pemebelian'           => 'Tahun Pemebelian',
+            'pemebelian'           => 'Tahun Pembelian',
             'pemebelian_helper'    => ' ',
             'perolehan'            => 'Asal usul Perolehan',
             'perolehan_helper'     => ' ',

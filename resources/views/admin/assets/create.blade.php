@@ -160,22 +160,6 @@
                             @endif
                             <span class="help-block">{{ trans('cruds.asset.fields.assigned_to_helper') }}</span>
                         </div>
-                        <div class="form-group {{ $errors->has('perintah') ? 'has-error' : '' }}">
-                            <label for="perintah">{{ trans('cruds.asset.fields.perintah') }}</label>
-                            <input class="form-control" type="text" name="perintah" id="perintah" value="{{ old('perintah', '') }}">
-                            @if($errors->has('perintah'))
-                                <span class="help-block" role="alert">{{ $errors->first('perintah') }}</span>
-                            @endif
-                            <span class="help-block">{{ trans('cruds.asset.fields.perintah_helper') }}</span>
-                        </div>
-                        <div class="form-group {{ $errors->has('disposisi') ? 'has-error' : '' }}">
-                            <label for="disposisi">{{ trans('cruds.asset.fields.disposisi') }}</label>
-                            <input class="form-control" type="text" name="disposisi" id="disposisi" value="{{ old('disposisi', '') }}">
-                            @if($errors->has('disposisi'))
-                                <span class="help-block" role="alert">{{ $errors->first('disposisi') }}</span>
-                            @endif
-                            <span class="help-block">{{ trans('cruds.asset.fields.disposisi_helper') }}</span>
-                        </div>
                         <div class="form-group">
                             <button class="btn btn-danger" type="submit">
                                 {{ trans('global.save') }}
