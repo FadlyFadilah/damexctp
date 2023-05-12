@@ -46,7 +46,7 @@
                             @endif
                         </div>
                         <div class="form-group {{ $errors->has('notes') ? 'has-error' : '' }}">
-                            <label for="notes">Notes</label>
+                            <label for="notes">Catatan</label>
                             <textarea class="form-control" name="notes" id="notes">{{ old('notes') }}</textarea>
                             @if($errors->has('notes'))
                                 <span class="help-block" role="alert">{{ $errors->first('notes') }}</span>

@@ -195,7 +195,7 @@ return [
         'fields'         => [
             'id'                  => 'ID',
             'id_helper'           => ' ',
-            'name'                => 'Name',
+            'name'                => 'Nama',
             'name_helper'         => ' ',
             'created_at'          => 'Created at',
             'created_at_helper'   => ' ',
