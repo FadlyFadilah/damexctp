@@ -13,7 +13,7 @@ trait CsvImportTrait
     {
         try {
             $filename = $request->input('filename', false);
-            $path     = storage_path('app/csv_import/' . $filename);
+            $path     = storage_path('app/public/csv_import/' . $filename);
 
             $hasHeader = $request->input('hasHeader', false);
 
