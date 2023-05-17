@@ -28,8 +28,8 @@ Auth::routes();
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    Route::get('/status/{name}', [HomeController::class, 'show'])->name('home2');
-    Route::get('/status/details/{name}/{status}', [HomeController::class, 'detail'])->name('details');
+    Route::get('/status/{name}', [HomeController::class, 'detail'])->name('home2');
+    Route::post('export/full', [HomeController::class, 'export'])->name('export.full');
 
     // Permissions
     Route::delete('permissions/destroy', [PermissionsController::class,'massDestroy'])->name('permissions.massDestroy');
